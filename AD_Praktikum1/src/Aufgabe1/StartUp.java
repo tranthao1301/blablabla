@@ -1,5 +1,11 @@
 package Aufgabe1;
 
+/**
+ * Gibt die Ergebnisse des Performance Vergleiches zwischen ArrayList und LinkedList aus!
+ * 
+ * @author Thu Thao Tran 
+ *		   Paulina Pansow
+ */
 public class StartUp {
 
 	public static void main(String[] args) {

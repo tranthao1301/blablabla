@@ -1,6 +1,16 @@
 package Aufgabe1;
 
-
+/**
+ * Implementiert das Interface Liste auf dem Prinzip von
+ * doppelt-verketteten Knoten
+ * 
+ * @author Thu Thao Tran
+ * 		   Paulina Pansow
+ * 
+ * @version 23.10.2018
+ *
+ * @param <E>
+ */
 public class LinkedList<E> implements Liste<E> {
 
 	private Node<E> _listenkopf;
@@ -15,12 +25,26 @@ public class LinkedList<E> implements Liste<E> {
 		_listenende.setzeVorgaenger(_listenkopf);
 	}
 	
+	/**
+	 * Gib die Laenge der Liste zurueck.
+	 * 
+	 * @return Anzahl der Elemente in der Liste.
+	 */
 	@Override
 	public int size()
 	{
 		return _size;
 	}
 	
+	/**
+	 * Fuegt ein Element in die Liste an einer bestimmten Position ein
+	 * 
+	 * @param elem
+	 *            Das Element welches eingefuegt wird
+	 * 
+	 * @param pos
+	 *            Die Position an welcher das Element eingefuegt wird
+	 */
 	@Override
 	public void add(E element, int pos) throws IllegalArgumentException
 	{
@@ -47,6 +71,12 @@ public class LinkedList<E> implements Liste<E> {
 			_size++;
 	}
 	
+	/**
+	 *  Loescht ein Element an einer Position Stelle 
+	 *  
+	 *  @param pos 	
+	 *  			Die Position an welcher das Elemnent geloescht werden soll
+	 */
 	@Override
 	public void delete(int pos) throws IllegalArgumentException
 	{
@@ -60,6 +90,15 @@ public class LinkedList<E> implements Liste<E> {
 		_size--;
 	}
 	
+	/**
+	 * Gibt ein Element von einer beliebigen Position wieder
+	 * 
+	 * @param pos 
+	 * 				Die Position von welcher das Element zurueckgegeben werden soll
+	 * 
+	 * @return gesuchtesElement
+	 *							Das gesuchte Element 								
+	 */
 	@Override
 	public E get(int pos) throws IllegalArgumentException
 	{
@@ -77,6 +116,10 @@ public class LinkedList<E> implements Liste<E> {
 		return currentNode.gibElement();
 	}
 	
+	/**
+	 *  Leert die Liste
+	 *  
+	 */
 	@Override
 	public void empty()
 	{

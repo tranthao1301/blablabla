@@ -2,12 +2,28 @@ package Aufgabe1;
 
 import java.util.Arrays;
 
+/**
+ * Implementiert das Interface Lineare List mit einem Array-basierten Liste 
+ *  
+ * @author 
+ *
+ * Thu Thao Tran
+ * Paulina Pansow
+ *
+ * 23.10.2018
+ */
+
 public class ArrayList<E> implements Liste<E> {
 
 	private final int _anfangskapazitaet;
 	private int _size;
 	private E[] _array;
 	
+	/**
+	 * Initialisiert eine Array-List
+	 * @param type 
+	 * 				Der Typ des Arrays
+	 */
 	@SuppressWarnings("unchecked")
 	public ArrayList()
 	{
@@ -16,12 +32,25 @@ public class ArrayList<E> implements Liste<E> {
 		_size = 0;
 	}
 	
+	/**
+	 *  Gibt die Anzahl der Elemente in der Liste wieder
+	 *  
+	 *  @return _size Die Groesse des Arrays
+	 */
 	@Override
 	public int size()
 	{
 		return _size;
 	}
 	
+	/**
+	 *  Fuegt ein Element an einer beliebigen Position ein
+	 *  
+	 *  @param element 
+	 *  				Das Element welches gesetzt wird
+	 *  @param pos 
+	 *  				Die Position an welcher das Element gesetzt wird
+	 */
 	@Override
 	public void add(E element, int pos) throws IllegalArgumentException
 	{
@@ -45,6 +74,12 @@ public class ArrayList<E> implements Liste<E> {
 		_size++;
 	}
 	
+	/**
+	 *  Loescht ein Element an einer Position Stelle 
+	 *  
+	 *  @param pos 	
+	 *  			Die Position an welcher das Elemnent gelöscht werden soll
+	 */
 	@Override
 	public void delete(int pos) throws IllegalArgumentException
 	{
@@ -60,6 +95,15 @@ public class ArrayList<E> implements Liste<E> {
 		_size--;
 	}
 	
+	/**
+	 * Gibt ein Element von einer beliebigen Position wieder
+	 * 
+	 * @param pos 
+	 * 				Die Position von welcher das Element zurueckgegeben werden soll
+	 * 
+	 * @return gesuchtesElement
+	 *							Das gesuchte Element 								
+	 */
 	@Override
 	public E get(int pos) throws IllegalArgumentException
 	{
@@ -72,6 +116,10 @@ public class ArrayList<E> implements Liste<E> {
 		return result;
 	}
 	
+	/**
+	 *  Leert die Liste
+	 *  
+	 */
 	@Override
 	public void empty()
 	{

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Stack-Implementierung über Collections.List
+ * Stack-Implementierung ueber Collections.List
  *
  * @author Philipp Jenke
  */
@@ -16,7 +16,7 @@ public class Stack<T> {
     private List<T> elemente = new ArrayList<T>();
 
     /**
-     * Zusätzliches Element auf den Stack legen.
+     * Zusaetzliches Element auf den Stack legen.
      */
     public void push(T element) {
         elemente.add(element);

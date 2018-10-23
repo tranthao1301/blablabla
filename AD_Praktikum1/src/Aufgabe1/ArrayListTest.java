@@ -4,14 +4,27 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+/**
+ * Testet die Klasse ArrayList 
+ * 
+ * @author Thu Thao Tran
+ * 		   Paulina Pansow
+ * 		
+ */
 public class ArrayListTest {
 
+	/**
+	 * Testet die Initialisierung des Konstruktors
+	 */
 	@Test
 	public void testKonstruktor() {
 		ArrayList<Integer> al = new ArrayList<>();
 		assertNotNull(al);
 	}
 	
+	/**
+	 * Testet ob die Methode die wirkliche Anzahl von Elementen in der Liste widergibt
+	 */
 	@Test
 	public void testSize()
 	{
@@ -23,6 +36,9 @@ public class ArrayListTest {
 		assertEquals(10, al.size());
 	}
 	
+	/**
+	 * Testet ob das Hinzufuegen von Elementen funktioniert
+	 */
 	@Test
 	public void testAdd()
 	{
@@ -31,6 +47,9 @@ public class ArrayListTest {
 		assertEquals("Laura", al.get(0));
 	}
 	
+	/**
+	 * Testet ob das Loeschen von Elementen in der Liste funktioniert
+	 */
 	@Test
 	public void testDelete()
 	{
@@ -48,6 +67,9 @@ public class ArrayListTest {
 		assertEquals(5, al.size());
 	}
 
+	/**
+	 * Testet ob die Methode das gewuenschte Element zurueckgibt 
+	 */
 	@Test
 	public void testGet()
 	{
@@ -56,6 +78,9 @@ public class ArrayListTest {
 		assertEquals("Laura", al.get(0));
 	}
 	
+	/**
+	 * Testet ob die Methode komplett geleert wird
+	 */
 	@Test
 	public void testEmpty()
 	{

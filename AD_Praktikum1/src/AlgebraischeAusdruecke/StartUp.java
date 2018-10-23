@@ -1,5 +1,11 @@
 package AlgebraischeAusdruecke;
 
+/**
+ * Gibt die Ergebnisse der Auswertung der algebraischen Ausdruecke zurueck
+ * 
+ * @author Thu Thao Tran
+ *		   Paulina Pansow
+ */
 public class StartUp {
 
 	public static void main(String[] args) {
