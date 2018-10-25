@@ -3,7 +3,7 @@ package aufgabe1;
 import java.util.Arrays;
 
 /**
- * Implementiert das Interface Lineare List mit einem Array-basierten Liste 
+ * Implementiert das Interface Liste mit einem Array-basierten Liste 
  *  
  * @author 
  *
