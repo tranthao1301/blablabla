@@ -14,7 +14,7 @@ public class PerformanceVergleich {
 	/**
 	 * Bestimmt die Dauer der Ausfuehrungzeit um 10.000 zufaellige Elemente am Anfang einer ArrayList einzufuegen
 	 */
-	public void addFirstArrayList()
+	public double addFirstArrayList()
 	{
 		double start = System.currentTimeMillis();
 		
@@ -27,13 +27,14 @@ public class PerformanceVergleich {
 		}
 		double end = System.currentTimeMillis();
 		double result = end - start;
-		System.out.println("Das Einfuegen am Anfang einer ArrayList dauert:" + result + " Millisekunden");
+		return result;
+//		System.out.println("Das Einfuegen am Anfang einer ArrayList dauert:" + result + " Millisekunden");
 	}
 	
 	/**
 	 * Bestimmt die Dauer der Aufuehrungszeit um 10.000 Elemente am Ende einer ArrayList einzufuegen
 	 */
-	public void addLastArrayList()
+	public double addLastArrayList()
 	{
 		double start = System.currentTimeMillis();
 		
@@ -46,13 +47,14 @@ public class PerformanceVergleich {
 		}
 		double end = System.currentTimeMillis();
 		double result = end - start;
-		System.out.println("Das Einfuegen am Ende einer ArrayList dauert:" + result + " Millisekunden");
+		return result;
+//		System.out.println("Das Einfuegen am Ende einer ArrayList dauert:" + result + " Millisekunden");
 	}
 	
 	/**
 	 * Bestimmt die Dauer der Aufuehrungszeit um 10.000 Elemente an zufaelligen Positionen einer ArrayList einzufuegen
 	 */
-	public void addRandomArrayList()
+	public double addRandomArrayList()
 	{
 		double start = System.currentTimeMillis();
 		
@@ -66,13 +68,14 @@ public class PerformanceVergleich {
 		}
 		double end = System.currentTimeMillis();
 		double result = end - start;
-		System.out.println("Das Einfuegen an zufaelligen Position einer ArrayList dauert:" + result + " Millisekunden");
+		return result;
+//		System.out.println("Das Einfuegen an zufaelligen Position einer ArrayList dauert:" + result + " Millisekunden");
 	}
 	
 	/**
 	 * Bestimmt die Dauer der Aufuehrungszeit um 1000 Elemente am Anfang einer ArrayList zu loeschen
 	 */
-	public void deleteFirstArrayList()
+	public double deleteFirstArrayList()
 	{
 		double start = System.currentTimeMillis();
 		
@@ -90,13 +93,14 @@ public class PerformanceVergleich {
 		}
 		double end = System.currentTimeMillis();
 		double result = end - start;
-		System.out.println("Das Loeschen am Anfang einer ArrayList dauert:" + result + " Millisekunden");
+		return result;
+//		System.out.println("Das Loeschen am Anfang einer ArrayList dauert:" + result + " Millisekunden");
 	}
 	
 	/**
 	 * Bestimmt die Dauer der Aufuehrungszeit um 1000 Elemente am Ende einer ArrayList zu loeschen
 	 */
-	public void deleteLastArrayList()
+	public double deleteLastArrayList()
 	{
 		double start = System.currentTimeMillis();
 		
@@ -113,13 +117,14 @@ public class PerformanceVergleich {
 		}
 		double end = System.currentTimeMillis();
 		double result = end - start;
-		System.out.println("Das Loeschen am Ende einer ArrayList dauert:" + result + " Millisekunden");
+		return result;
+//		System.out.println("Das Loeschen am Ende einer ArrayList dauert:" + result + " Millisekunden");
 	}
 	
 	/**
 	 * Bestimmt die Dauer der Aufuehrungszeit um 1000 Elemente an zufaelligen Positionen einer ArrayList zu loeschen
 	 */
-	public void deleteRandomArrayList()
+	public double deleteRandomArrayList()
 	{
 		double start = System.currentTimeMillis();
 		
@@ -138,13 +143,14 @@ public class PerformanceVergleich {
 		}
 		double end = System.currentTimeMillis();
 		double result = end - start;
-		System.out.println("Das Loeschen an zufaelligen Position einer ArrayList dauert:" + result + " Millisekunden");
+		return result;
+//		System.out.println("Das Loeschen an zufaelligen Position einer ArrayList dauert:" + result + " Millisekunden");
 	}
 	
 	/**
 	 * Bestimmt die Dauer der Ausfuehrungzeit um 10.000 zufaellige Elemente am Anfang einer LinkedList einzufuegen
 	 */
-	public void addFirstLinkedList()
+	public double addFirstLinkedList()
 	{
 		double start = System.currentTimeMillis();
 		
@@ -158,13 +164,14 @@ public class PerformanceVergleich {
 		
 		double end = System.currentTimeMillis();
 		double result = end - start;
-		System.out.println("Das Einfuegen am Anfang einer LinkedList dauert:" + result + " Millisekunden");
+		return result;
+//		System.out.println("Das Einfuegen am Anfang einer LinkedList dauert:" + result + " Millisekunden");
 	}
 	
 	/**
 	 * Bestimmt die Dauer der Ausfuehrungzeit um 10.000 zufaellige Elemente am Ende einer LinkedList einzufuegen
 	 */
-	public void addLastLinkedList()
+	public double addLastLinkedList()
 	{
 		double start = System.currentTimeMillis();
 		
@@ -177,13 +184,14 @@ public class PerformanceVergleich {
 		}
 		double end = System.currentTimeMillis();
 		double result = end - start;
-		System.out.println("Das Einfuegen am Ende einer LinkedList dauert:" + result + " Millisekunden");
+		return result;
+//		System.out.println("Das Einfuegen am Ende einer LinkedList dauert:" + result + " Millisekunden");
 	}
 	
 	/**
 	 * Bestimmt die Dauer der Ausfuehrungzeit um 10.000 zufaellige Elemente an zufaelligen Positionen einer LinkedList einzufuegen
 	 */
-	public void addRandomLinkedList()
+	public double addRandomLinkedList()
 	{
 		double start = System.currentTimeMillis();
 		
@@ -197,13 +205,14 @@ public class PerformanceVergleich {
 		}
 		double end = System.currentTimeMillis();
 		double result = end - start;
-		System.out.println("Das Einfuegen an zufaelligen Position einer LinkedList dauert:" + result + " Millisekunden");
+		return result;
+//		System.out.println("Das Einfuegen an zufaelligen Position einer LinkedList dauert:" + result + " Millisekunden");
 	}
 	
 	/**
 	 * Bestimmt die Dauer der Ausfuehrungzeit um 1000 zufaellige Elemente am Anfang einer LinkedList zu loeschen
 	 */
-	public void deleteFirstLinkedList()
+	public double deleteFirstLinkedList()
 	{
 		double start = System.currentTimeMillis();
 		
@@ -221,13 +230,14 @@ public class PerformanceVergleich {
 		}
 		double end = System.currentTimeMillis();
 		double result = end - start;
-		System.out.println("Das Loeschen am Anfang einer LinkedList dauert:" + result + " Millisekunden");
+		return result;
+//		System.out.println("Das Loeschen am Anfang einer LinkedList dauert:" + result + " Millisekunden");
 	}
 	
 	/**
 	 * Bestimmt die Dauer der Ausfuehrungzeit um 1000 zufaellige Elemente am Ende einer LinkedList zu loeschen
 	 */
-	public void deleteLastLinkedList()
+	public double deleteLastLinkedList()
 	{
 		double start = System.currentTimeMillis();
 		
@@ -245,13 +255,14 @@ public class PerformanceVergleich {
 		}
 		double end = System.currentTimeMillis();
 		double result = end - start;
-		System.out.println("Das Loeschen am Anfang einer LinkedList dauert:" + result + " Millisekunden");
+		return result;
+//		System.out.println("Das Loeschen am Anfang einer LinkedList dauert:" + result + " Millisekunden");
 	}
 	
 	/**
 	 * Bestimmt die Dauer der Ausfuehrungzeit um 1000 zufaellige Elemente an zufaelligen Positionen einer LinkedList zu loeschen
 	 */
-	public void deleteRandomLinkedList()
+	public double deleteRandomLinkedList()
 	{
 		double start = System.currentTimeMillis();
 		
@@ -270,6 +281,7 @@ public class PerformanceVergleich {
 		}
 		double end = System.currentTimeMillis();
 		double result = end - start;
-		System.out.println("Das Loeschen an zuf�lligen Positionen einer LinkedList dauert:" + result + " Millisekunden");
+		return result;
+//		System.out.println("Das Loeschen an zufaelligen Positionen einer LinkedList dauert:" + result + " Millisekunden");
 	}
 }

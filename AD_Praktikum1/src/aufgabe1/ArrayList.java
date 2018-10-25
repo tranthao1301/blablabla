@@ -24,6 +24,7 @@ public class ArrayList<E> implements Liste<E> {
 	 * @param type 
 	 * 				Der Typ des Arrays
 	 */
+
 	@SuppressWarnings("unchecked")
 	public ArrayList()
 	{
