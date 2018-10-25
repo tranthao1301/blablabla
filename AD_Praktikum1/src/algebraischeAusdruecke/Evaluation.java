@@ -1,4 +1,4 @@
-package AlgebraischeAusdruecke;
+package algebraischeAusdruecke;
 
 
 public class Evaluation {
@@ -10,10 +10,10 @@ public class Evaluation {
 	   * Es sind folgende Terme erlaubt:
 	   * positive ganze Zahlen
 	   * Klammern ()
-	   * Grundoperationen +−∗/
-	   * Ausdrücke müssen vollständig geklammert sein
+	   * Grundoperationen + - * /
+	   * Ausdruecke muessen vollständig geklammert sein
 	   * Operationen haben genau zwei Operanden
-	   * Operanden sind Zahlen oder Klammer-Ausdrücke
+	   * Operanden sind Zahlen oder Klammer-AusdrÃ¼cke
 	   * keine Punkt- vor Strichrechnung
 	   * @param expr Der Ausdruck
 	   * @throws IllegalArgumentException bei ungueltigem Ausdruck
@@ -22,6 +22,7 @@ public class Evaluation {
 	public int eval(String exp)
 	{
 		String[] split = exp.split(" ");
+		isValid(split);
 		Stack<String> stack = new Stack<>();
 		for(String token : split) {
 			if(!token.equals(")")) {
@@ -56,7 +57,7 @@ public class Evaluation {
 			zahl2 = Integer.parseInt(operand2);
 		} catch (NumberFormatException e) {
 			throw new IllegalArgumentException(
-					"Diese sind keine gültigen Zahlen", e);
+					"Diese sind keine gueltigen Zahlen", e);
 		}
 		
 		switch(operator) {

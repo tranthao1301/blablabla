@@ -1,4 +1,4 @@
-package AlgebraischeAusdruecke;
+package algebraischeAusdruecke;
 
 /**
  * Gibt die Ergebnisse der Auswertung der algebraischen Ausdruecke zurueck

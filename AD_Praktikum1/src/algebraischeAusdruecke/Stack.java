@@ -1,4 +1,4 @@
-package AlgebraischeAusdruecke;
+package algebraischeAusdruecke;
 
 import java.util.ArrayList;
 import java.util.List;
