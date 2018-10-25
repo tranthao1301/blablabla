@@ -1,4 +1,4 @@
-package Aufgabe1;
+package aufgabe1;
 
 /**
  * Implementiert das Interface Liste auf dem Prinzip von

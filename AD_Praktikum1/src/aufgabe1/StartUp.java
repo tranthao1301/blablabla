@@ -1,4 +1,4 @@
-package Aufgabe1;
+package aufgabe1;
 
 /**
  * Gibt die Ergebnisse des Performance Vergleiches zwischen ArrayList und LinkedList aus!

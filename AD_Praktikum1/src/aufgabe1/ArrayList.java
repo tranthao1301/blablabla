@@ -1,4 +1,4 @@
-package Aufgabe1;
+package aufgabe1;
 
 import java.util.Arrays;
 
@@ -86,7 +86,7 @@ public class ArrayList<E> implements Liste<E> {
 
 		if(pos < 0 && pos > _array.length)
 		{
-			throw new IllegalArgumentException("Ungültige Position");
+			throw new IllegalArgumentException("Ungï¿½ltige Position");
 		}
 		_array[pos] = null;
 		for(int i = pos; i < _size; i++) {
@@ -109,7 +109,7 @@ public class ArrayList<E> implements Liste<E> {
 	{
 		if(pos < 0 && pos > _array.length)
 		{
-			throw new IllegalArgumentException("Ungültige Position");
+			throw new IllegalArgumentException("Ungï¿½ltige Position");
 		}
 		
 		E result = _array[pos];

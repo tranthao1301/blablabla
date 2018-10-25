@@ -1,4 +1,4 @@
-package Aufgabe1;
+package aufgabe1;
 
 import java.util.Random;
 
@@ -270,6 +270,6 @@ public class PerformanceVergleich {
 		}
 		double end = System.currentTimeMillis();
 		double result = end - start;
-		System.out.println("Das Loeschen an zufälligen Positionen einer LinkedList dauert:" + result + " Millisekunden");
+		System.out.println("Das Loeschen an zufï¿½lligen Positionen einer LinkedList dauert:" + result + " Millisekunden");
 	}
 }

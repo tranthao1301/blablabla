@@ -1,4 +1,4 @@
-package Aufgabe1;
+package aufgabe1;
 
 public interface Liste<E> {
 

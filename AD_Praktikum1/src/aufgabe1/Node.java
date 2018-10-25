@@ -1,4 +1,4 @@
-package Aufgabe1;
+package aufgabe1;
 
 /**
  * Die Klasse modelliert doppelt verkettbare Knoten.

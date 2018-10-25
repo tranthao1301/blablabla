@@ -1,25 +1,25 @@
-package Aufgabe1;
+package aufgabe1;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
 /**
- * Testet die Klasse ArrayList 
+ * Testet die Klasse LinkedList 
  * 
  * @author Thu Thao Tran
  * 		   Paulina Pansow
  * 		
  */
-public class ArrayListTest {
+public class LinkedListTest {
 
 	/**
 	 * Testet die Initialisierung des Konstruktors
 	 */
 	@Test
 	public void testKonstruktor() {
-		ArrayList<Integer> al = new ArrayList<>();
-		assertNotNull(al);
+		LinkedList<Integer> myList = new LinkedList<>();
+		assertNotNull(myList);
 	}
 	
 	/**
@@ -28,12 +28,12 @@ public class ArrayListTest {
 	@Test
 	public void testSize()
 	{
-		ArrayList<Integer> al = new ArrayList<>();
+		LinkedList<Integer> myList = new LinkedList<>();
 		for(int i = 0; i < 10; i++)
 		{
-			al.add(i, i);
+			myList.add(i, i);
 		}
-		assertEquals(10, al.size());
+		assertEquals(10, myList.size());
 	}
 	
 	/**
@@ -42,9 +42,9 @@ public class ArrayListTest {
 	@Test
 	public void testAdd()
 	{
-		ArrayList<String> al = new ArrayList<>();
-		al.add("Laura", 0);
-		assertEquals("Laura", al.get(0));
+		LinkedList<String> myList = new LinkedList<>();
+		myList.add("Laura", 0);
+		assertEquals("Laura", myList.get(0));
 	}
 	
 	/**
@@ -53,18 +53,18 @@ public class ArrayListTest {
 	@Test
 	public void testDelete()
 	{
-		ArrayList<Integer> al = new ArrayList<>();
+		LinkedList<Integer> myList = new LinkedList<>();
 		for(int i = 0; i < 10; i++)
 		{
-			al.add(i, i);
+			myList.add(i, i);
 		}
-		assertEquals(10, al.size());
+		assertEquals(10, myList.size());
 		
 		for(int i = 0; i < 5; i++)
 		{
-			al.delete(i);
+			myList.delete(i);
 		}
-		assertEquals(5, al.size());
+		assertEquals(5, myList.size());
 	}
 
 	/**
@@ -73,9 +73,9 @@ public class ArrayListTest {
 	@Test
 	public void testGet()
 	{
-		ArrayList<String> al = new ArrayList<>();
-		al.add("Laura", 0);
-		assertEquals("Laura", al.get(0));
+		LinkedList<String> myList = new LinkedList<>();
+		myList.add("Laura", 0);
+		assertEquals("Laura", myList.get(0));
 	}
 	
 	/**
@@ -84,14 +84,15 @@ public class ArrayListTest {
 	@Test
 	public void testEmpty()
 	{
-		ArrayList<Integer> al = new ArrayList<>();
+		LinkedList<Integer> myList = new LinkedList<>();
 		for(int i = 0; i < 10; i++)
 		{
-			al.add(i, i);
+			myList.add(i, i);
 		}
 		
-		assertEquals(10, al.size());
-		al.empty();
-		assertEquals(0, al.size());
+		assertEquals(10, myList.size());
+		myList.empty();
+		assertEquals(0, myList.size());
 	}
+
 }
